@@ -18,7 +18,6 @@ class OutlinedText extends StatelessWidget {
     this.textHeightBehavior,
     this.selectionColor,
     this.outlineColor,
-    this.textColor,
   });
 
   final String data;
@@ -36,7 +35,6 @@ class OutlinedText extends StatelessWidget {
   final TextHeightBehavior? textHeightBehavior;
   final Color? selectionColor;
   final Color? outlineColor;
-  final Color? textColor;
 
   @override
   Widget build(BuildContext context) {
@@ -57,7 +55,7 @@ class OutlinedText extends StatelessWidget {
             foreground: Paint()
               ..style = PaintingStyle.stroke
               ..strokeWidth = 3
-              ..color = Colors.black,
+              ..color = outlineColor ?? Colors.black,
           ),
           textAlign: textAlign,
           textDirection: textDirection,
