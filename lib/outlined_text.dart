@@ -51,7 +51,6 @@ class OutlinedText extends StatelessWidget {
           softWrap: softwrap,
           strutStyle: strutStyle,
           style: style?.copyWith(
-            fontWeight: FontWeight.bold,
             foreground: Paint()
               ..style = PaintingStyle.stroke
               ..strokeWidth = 3
